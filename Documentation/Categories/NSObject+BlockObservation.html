@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 744)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 774)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -172,19 +172,7 @@ dealloc method of any object making use of block-based KVO.</p></div>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addObserverForKeyPath:task:">&ndash;&nbsp;addObserverForKeyPath:task:</a></code>
-		<span class="tooltip"><h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-</span>
+		<span class="tooltip"><p>Adds an observer to an object conforming to NSKeyValueObserving.</p></span>
 	</span>
 	
 	
@@ -198,20 +186,7 @@ dealloc method of any object making use of block-based KVO.</p></div>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addObserverForKeyPath:options:task:">&ndash;&nbsp;addObserverForKeyPath:options:task:</a></code>
-		<span class="tooltip"><h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param options The NSKeyValueObservingOptions to use.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-</span>
+		<span class="tooltip"><p>Adds an observer to an object conforming to NSKeyValueObserving.</p></span>
 	</span>
 	
 	
@@ -225,7 +200,7 @@ dealloc method of any object making use of block-based KVO.</p></div>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeObserverForKeyPath:identifier:">&ndash;&nbsp;removeObserverForKeyPath:identifier:</a></code>
-		<span class="tooltip"><p>Removes a block overserver.</p></span>
+		<span class="tooltip"><p>Removes a block observer.</p></span>
 	</span>
 	
 	
@@ -272,12 +247,12 @@ dealloc method of any object making use of block-based KVO.</p></div>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>keyPath</em></dt>
-			<dd><p>A unique key identifying the observer to the reciever.</p></dd>
+			<dd><p>The property to observe, relative to the reciever.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>token</em></dt>
-			<dd><p>An identifier for observation block.</p></dd>
+			<dd><p>An identifier for the observation block.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -301,15 +276,22 @@ observation with removeObserverWithBlockToken:.</p></dd>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Adds an observer to an object conforming to NSKeyValueObserving.</p>
-
-<p>Adds a block observer that notifies executes the block upon a
+		<p>Adds a block observer that notifies executes the block upon a
 state change.</p>
 	</div>
 	
 	
 	
 	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addObserverForKeyPath:task:">&ndash; addObserverForKeyPath:task:</a></p></code></li>
+			
+		</ul>
+	</div>
 	
 	
 	
@@ -340,12 +322,12 @@ state change.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>keyPath</em></dt>
-			<dd><p>A unique key identifying the observer to the reciever.</p></dd>
+			<dd><p>The property to observe, relative to the reciever.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>token</em></dt>
-			<dd><p>An identifier for observation block.</p></dd>
+			<dd><p>An identifier for the observation block.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -364,15 +346,23 @@ observation with removeObserverWithBlockToken:.</p></dd>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Adds an observer to an object conforming to NSKeyValueObserving.</p>
-
-<p>Adds a block observer that notifies executes the block upon a
-state change.</p>
+		<p>Adds a block observer that notifies executes the block upon a
+state change.</p><div class="warning"><p>For simplicity, this method has been deprecated in favor of
+<a href="#//api/name/addObserverForKeyPath:identifier:options:task:">addObserverForKeyPath:identifier:options:task:</a> starting in BlocksKit 1.0.6.</p></div>
 	</div>
 	
 	
 	
 	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addObserverForKeyPath:identifier:options:task:">&ndash; addObserverForKeyPath:identifier:options:task:</a></p></code></li>
+			
+		</ul>
+	</div>
 	
 	
 	
@@ -391,27 +381,40 @@ state change.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param options The NSKeyValueObservingOptions to use.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-
+		<p>Adds an observer to an object conforming to NSKeyValueObserving.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (NSString *)addObserverForKeyPath:(NSString *)<em>keyPath</em> options:(NSKeyValueObservingOptions)<em>options</em> task:(BKObservationBlock)<em>task</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The property to observe, relative to the reciever.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>The NSKeyValueObservingOptions to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>task</em></dt>
+			<dd><p>A block responding to the reciever and the KVO change.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a globally unique process identifier for removing
+observation with removeObserverWithBlockToken:.</p>
+	</div>
 	
 	
 	
@@ -419,25 +422,23 @@ state change.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param options The NSKeyValueObservingOptions to use.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-
+		<p>Adds a block observer that notifies executes the block upon a
+state change.</p><div class="warning"><p>For simplicity, this method has been deprecated in favor of
+<a href="#//api/name/addObserverForKeyPath:task:">addObserverForKeyPath:task:</a> starting in BlocksKit 1.0.6.</p></div>
 	</div>
 	
 	
 	
 	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addObserverForKeyPath:task:">&ndash; addObserverForKeyPath:task:</a></p></code></li>
+			
+		</ul>
+	</div>
 	
 	
 	
@@ -456,26 +457,35 @@ state change.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-
+		<p>Adds an observer to an object conforming to NSKeyValueObserving.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (NSString *)addObserverForKeyPath:(NSString *)<em>keyPath</em> task:(BKObservationBlock)<em>task</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The property to observe, relative to the reciever.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>task</em></dt>
+			<dd><p>A block responding to the reciever and the KVO change.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a globally unique process identifier for removing
+observation with removeObserverWithBlockToken:.</p>
+	</div>
 	
 	
 	
@@ -483,24 +493,22 @@ state change.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<h2>Adds an observer to an object conforming to NSKeyValueObserving.</h2>
-
-<ul>
-<li>Adds a block observer that notifies executes the block upon a
-
-<h2>&ndash; state change.</h2></li>
-<li>@param keyPath A unique key identifying the observer to the reciever.</li>
-<li>@param task A block responding to the reciever and the KVO change.</li>
-<li>@return Returns a globally unique process identifier for removing
-
-<h2>&ndash; observation with removeObserverWithBlockToken:.</h2></li>
-</ul>
-
+		<p>Adds a block observer that notifies executes the block upon a
+state change.</p>
 	</div>
 	
 	
 	
 	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addObserverForKeyPath:identifier:options:task:">&ndash; addObserverForKeyPath:identifier:options:task:</a></p></code></li>
+			
+		</ul>
+	</div>
 	
 	
 	
@@ -532,11 +540,6 @@ state change.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Remove all registered block observers.</p>
-	</div>
-	
 	
 	
 	
@@ -558,15 +561,20 @@ state change.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Removes a block overserver.</p>
+		<p>Removes a block observer.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)removeObserverForKeyPath:(NSString *)<em>inKeyPath</em> identifier:(NSString *)<em>token</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)removeObserverForKeyPath:(NSString *)<em>keyPath</em> identifier:(NSString *)<em>token</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyPath</em></dt>
+			<dd><p>The property to stop observing, relative to the reciever.</p></dd>
+		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>token</em></dt>
@@ -581,11 +589,6 @@ or the identifier given in <a href="#//api/name/addObserverForKeyPath:identifier
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Removes a block overserver.</p>
-	</div>
 	
 	
 	
@@ -614,9 +617,9 @@ or the identifier given in <a href="#//api/name/addObserverForKeyPath:identifier
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-26)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 744)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 774)</a>.</span></p>
 						
 					</div>
 				</div>

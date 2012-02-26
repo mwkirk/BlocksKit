@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 744)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 774)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -265,10 +265,7 @@ the given block once for each object.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Enumerates through an array concurrently and executes
-the given block once for each object.</p>
-
-<p>Enumeration will occur on appropriate background queues. This
+		<p>Enumeration will occur on appropriate background queues. This
 will have a noticeable speed increase, especially on dual-core
 devices, but you <em>must</em> be aware of the thread safety of the
 objects you message from within the block. Be aware that the
@@ -319,11 +316,6 @@ be called in.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Loops through an array and executes the given block with each object.</p>
-	</div>
 	
 	
 	
@@ -376,9 +368,7 @@ be called in.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Call the block once for each object and create an array of the return values.</p>
-
-<p>This is sometimes referred to as a transform, mutating one of each object:</p>
+		<p>This is sometimes referred to as a transform, mutating one of each object:</p>
 
 <pre><code> NSArray *new = [stringArray map:^id(id obj) {
    return [obj stringByAppendingString:@".png"]);
@@ -428,7 +418,7 @@ be called in.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the object if found, <code>nil</code> otherwise.</p>
+		<p>Returns the object, if found, or <code>nil</code>.</p>
 	</div>
 	
 	
@@ -437,9 +427,7 @@ be called in.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Loops through an array to find the object matching the block.</p>
-
-<p><a href="#//api/name/match:">match:</a> is functionally identical to <a href="#//api/name/select:">select:</a>, but will stop and return
+		<p>match: is functionally identical to <a href="#//api/name/select:">select:</a>, but will stop and return
 on the first match.</p>
 	</div>
 	
@@ -508,9 +496,7 @@ on the first match.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Arbitrarily accumulate objects using a block.</p>
-
-<p>The concept of this selector is difficult to illustrate in words. The sum can
+		<p>The concept of this selector is difficult to illustrate in words. The sum can
 be any NSObject, including (but not limited to) an NSString, NSNumber, or NSValue.</p>
 
 <p>For example, you can concentate the strings in an array:</p>
@@ -571,7 +557,7 @@ be any NSObject, including (but not limited to) an NSString, NSNumber, or NSValu
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns an array of all objects not found, <code>nil</code> if all are excluded.</p>
+		<p>Returns an array of all objects not found.</p>
 	</div>
 	
 	
@@ -580,9 +566,7 @@ be any NSObject, including (but not limited to) an NSString, NSNumber, or NSValu
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Loops through an array to find the objects not matching the block.</p>
-
-<p>This selector performs <em>literally</em> the exact same function as select: but in reverse.</p>
+		<p>This selector performs <em>literally</em> the exact same function as select: but in reverse.</p>
 
 <p>This is useful, as one may expect, for removing objects from an array.</p>
 
@@ -634,17 +618,12 @@ be any NSObject, including (but not limited to) an NSString, NSNumber, or NSValu
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns an array of the objects found, <code>nil</code> otherwise.</p>
+		<p>Returns an array of the objects found.</p>
 	</div>
 	
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Loops through an array to find the objects matching the block.</p>
-	</div>
 	
 	
 	
@@ -682,9 +661,9 @@ be any NSObject, including (but not limited to) an NSString, NSNumber, or NSValu
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-26)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 744)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 774)</a>.</span></p>
 						
 					</div>
 				</div>

@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 744)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 774)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -228,7 +228,7 @@ download progress.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-		<span class="tooltip"><p>A mutable <a href="#//api/name/delegate">delegate</a> that implements the NSURLConnectionDelegate protocol.</p></span>
+		<span class="tooltip"><p>A mutable delegate that implements the NSURLConnectionDelegate protocol.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -324,7 +324,7 @@ representing the current percentage of completion.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>A mutable <a href="#//api/name/delegate">delegate</a> that implements the NSURLConnectionDelegate protocol.</p>
+		<p>A mutable delegate that implements the NSURLConnectionDelegate protocol.</p>
 	</div>		
 	
 	
@@ -339,9 +339,7 @@ representing the current percentage of completion.</p></span>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>A mutable <a href="#//api/name/delegate">delegate</a> that implements the NSURLConnectionDelegate protocol.</p>
-
-<p>This property allows for both use of block callbacks and <a href="#//api/name/delegate">delegate</a> methods
+		<p>This property allows for both use of block callbacks and delegate methods
 in an instance of NSURLConnection.  It only works on block-backed
 NSURLConnection instances.</p>
 	</div>
@@ -383,10 +381,7 @@ representing the current percentage of completion.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The block fired every time new data is recieved from the server,
-representing the current percentage of completion.</p>
-
-<p>This block corresponds to the connection:didRecieveData:
+		<p>This block corresponds to the connection:didRecieveData:
 method of NSURLConnectionDelegate.</p>
 	</div>
 	
@@ -426,9 +421,7 @@ method of NSURLConnectionDelegate.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The block fired upon the failure of the connection.</p>
-
-<p>This block corresponds to the connection:didFailWithError:
+		<p>This block corresponds to the connection:didFailWithError:
 method of NSURLConnectionDelegate.</p>
 	</div>
 	
@@ -468,9 +461,7 @@ method of NSURLConnectionDelegate.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The block fired once the connection recieves a response from the server.</p>
-
-<p>This block corresponds to the connection:didReceiveResponse: method
+		<p>This block corresponds to the connection:didReceiveResponse: method
 of NSURLConnectionDelegate.</p>
 	</div>
 	
@@ -510,9 +501,7 @@ of NSURLConnectionDelegate.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The block that  upon the successful completion of the connection.</p>
-
-<p>This block corresponds to the connectionDidFinishLoading:
+		<p>This block corresponds to the connectionDidFinishLoading:
 method of NSURLConnectionDelegate.</p><div class="warning"><p>If the <a href="#//api/name/delegate">delegate</a> implements connection:didRecieveData:, then this
 block will <em>not</em> include the data recieved by the connection and appending
 the recieved data to an instance NSMutableData is left up to the user due
@@ -556,10 +545,7 @@ representing the current percentage of completion.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The block fired every time new data is sent to the server,
-representing the current percentage of completion.</p>
-
-<p>This block corresponds to the
+		<p>This block corresponds to the
 connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:
 method of NSURLConnectionDelegate.</p>
 	</div>
@@ -621,11 +607,6 @@ method of NSURLConnectionDelegate.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Creates and returns an initialized block-backed URL connection that does not begin to load the data for the URL request.</p>
-	</div>
-	
 	
 	
 	
@@ -685,11 +666,6 @@ method of NSURLConnectionDelegate.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Creates, starts, and returns an asynchronous, block-backed URL connection</p>
-	</div>
-	
 	
 	
 	
@@ -747,11 +723,6 @@ method of NSURLConnectionDelegate.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns an initialized block-backed URL connection.</p>
-	</div>
-	
 	
 	
 	
@@ -806,11 +777,6 @@ method of NSURLConnectionDelegate.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns an initialized URL connection with the specified completion handler.</p>
-	</div>
-	
 	
 	
 	
@@ -855,11 +821,6 @@ method of NSURLConnectionDelegate.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Causes the connection to begin loading data, if it has not already, with the specified block to be fired on successful completion.</p>
-	</div>
-	
 	
 	
 	
@@ -887,9 +848,9 @@ method of NSURLConnectionDelegate.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-26)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 744)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 774)</a>.</span></p>
 						
 					</div>
 				</div>
