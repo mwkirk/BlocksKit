@@ -273,6 +273,9 @@
 /* Begin PBXFileReference section */
 		00D28AC614AAC43E00ECB62C /* UIPopoverController+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+BlocksKit.h"; sourceTree = "<group>"; };
 		00D28AC714AAC43E00ECB62C /* UIPopoverController+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+BlocksKit.m"; sourceTree = "<group>"; };
+		45955354153F2D39008B369D /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../OnDaBus/Debug.xcconfig; sourceTree = "<group>"; };
+		45955355153F2D39008B369D /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../OnDaBus/Release.xcconfig; sourceTree = "<group>"; };
+		45955356153F2D39008B369D /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Shared.xcconfig; path = ../OnDaBus/Shared.xcconfig; sourceTree = "<group>"; };
 		600986F913C2A2B700A8887E /* NSTimerBlocksKitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerBlocksKitTest.h; sourceTree = "<group>"; };
 		600986FA13C2A2B700A8887E /* NSTimerBlocksKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerBlocksKitTest.m; sourceTree = "<group>"; };
 		600986FD13C2B49D00A8887E /* NSInvocationBlocksKitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSInvocationBlocksKitTest.h; sourceTree = "<group>"; };
@@ -525,6 +528,9 @@
 		6C3DBF821382F1BA00E6C9AA = {
 			isa = PBXGroup;
 			children = (
+				45955354153F2D39008B369D /* Debug.xcconfig */,
+				45955355153F2D39008B369D /* Release.xcconfig */,
+				45955356153F2D39008B369D /* Shared.xcconfig */,
 				6C3DBF921382F1BA00E6C9AA /* BlocksKit */,
 				60FF000E13C023CB004A1394 /* Tests */,
 				6C3DBF8F1382F1BA00E6C9AA /* Frameworks */,
@@ -817,9 +823,9 @@
 			productReference = 60FF000713C023CB004A1394 /* iOS Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6C3DBF8C1382F1BA00E6C9AA /* iOS Library */ = {
+		6C3DBF8C1382F1BA00E6C9AA /* BlocksKit iOS Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C3DBF971382F1BA00E6C9AA /* Build configuration list for PBXNativeTarget "iOS Library" */;
+			buildConfigurationList = 6C3DBF971382F1BA00E6C9AA /* Build configuration list for PBXNativeTarget "BlocksKit iOS Library" */;
 			buildPhases = (
 				6C3DBF891382F1BA00E6C9AA /* Sources */,
 				6C3DBF8A1382F1BA00E6C9AA /* Frameworks */,
@@ -829,7 +835,7 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Library";
+			name = "BlocksKit iOS Library";
 			productName = BlocksKit;
 			productReference = 6C3DBF8D1382F1BA00E6C9AA /* libBlocksKit.a */;
 			productType = "com.apple.product-type.library.static";
@@ -908,7 +914,7 @@
 			projectRoot = "";
 			targets = (
 				6CFC4B5914E212E00036F8ED /* iOS Framework */,
-				6C3DBF8C1382F1BA00E6C9AA /* iOS Library */,
+				6C3DBF8C1382F1BA00E6C9AA /* BlocksKit iOS Library */,
 				6CC40A741447BB1400E47595 /* OS X Framework */,
 				6CC08FCD1385555D00DDEABB /* OS X Library */,
 				6CC08FEE13855CAE00DDEABB /* Chameleon Library */,
@@ -1121,12 +1127,12 @@
 /* Begin PBXTargetDependency section */
 		60FF002B13C031A2004A1394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6C3DBF8C1382F1BA00E6C9AA /* iOS Library */;
+			target = 6C3DBF8C1382F1BA00E6C9AA /* BlocksKit iOS Library */;
 			targetProxy = 60FF002A13C031A2004A1394 /* PBXContainerItemProxy */;
 		};
 		6CFC4B5E14E213130036F8ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6C3DBF8C1382F1BA00E6C9AA /* iOS Library */;
+			target = 6C3DBF8C1382F1BA00E6C9AA /* BlocksKit iOS Library */;
 			targetProxy = 6CFC4B5D14E213130036F8ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1197,6 +1203,7 @@
 		};
 		6C3DBF951382F1BA00E6C9AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45955354153F2D39008B369D /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
@@ -1231,6 +1238,7 @@
 		};
 		6C3DBF961382F1BA00E6C9AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45955355153F2D39008B369D /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
@@ -1261,8 +1269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_THUMB_SUPPORT = NO;
-				PRIVATE_HEADERS_FOLDER_PATH = "../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)/lib";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1271,8 +1281,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_THUMB_SUPPORT = NO;
-				PRIVATE_HEADERS_FOLDER_PATH = "../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)/lib";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1438,7 +1450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C3DBF971382F1BA00E6C9AA /* Build configuration list for PBXNativeTarget "iOS Library" */ = {
+		6C3DBF971382F1BA00E6C9AA /* Build configuration list for PBXNativeTarget "BlocksKit iOS Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C3DBF981382F1BA00E6C9AA /* Debug */,
